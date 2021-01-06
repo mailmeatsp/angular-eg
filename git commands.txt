@@ -1,0 +1,20 @@
+
+git status
+
+---------------
+
+git add .
+(or)
+git add filename.txt 
+
+git commit -m "comment"\
+
+git push origin main (branch name)
+
+
+--------
+
+git pull origin main 
+
+
+-------------------
