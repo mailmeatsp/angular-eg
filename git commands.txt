@@ -17,4 +17,17 @@ git push origin main (branch name)
 git pull origin main 
 
 
--------------------
+------------------
+
+Create new branch
+----------
+
+git checkout -b "newBranchName"
+
+change new branch to main branch
+---------
+
+git checkout main
+
+
+git pull

@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-md-6 offset-md-3 mt-4">
+        <h3>Login</h3>
+        <form #f="ngForm" (ngSubmit)="onSubmitHandler(f)">
+            <div class="form-group">
+                <label for="loginUserName">User Name</label>
+                <input type="text" class="form-control" id="loginUserName" 
+                placeholder="Enter UserName"  name="userName" ngModel #userName="ngModel" required>
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" class="form-control" id="loginPassword" 
+                placeholder="Password" name="password" ngModel #password="ngModel" required>
+            </div>
+            <div class="form-group form-check">
+                <a routerLink="/resetPassword">Forgot Password</a>
+            </div>
+            <button type="submit" class="btn btn-primary" [disabled]="f.invalid">Login <i class="fas fa-sign-in-alt"></i></button>
+        </form>
+    </div>
+</div>
